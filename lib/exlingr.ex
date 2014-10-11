@@ -10,13 +10,6 @@ defmodule ExLingr do
     ExLingr.API.Base.init
   end
 
-  # --------- ExLingr Settings ---------
-
-  @doc """
-  Provides Login settings for access Lingr server.
-  """
-  defdelegate configure(account_info), to: ExLingr.Config, as: :set
-
   # --------- Sessions ---------
 
   @doc """
