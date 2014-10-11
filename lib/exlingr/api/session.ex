@@ -32,9 +32,13 @@ defmodule ExLingr.API.Session do
   Access to `session/destroy` with session.
   """
   def destroy_session do
-    query = URI.encode_query(%{"session" => ExLingr.Config.get})
-    json = ExLingr.API.Base.decode(@session_destroy, query)
-    ExLingr.Config.set([])
-    json
+    if ExLingr.Config.get do
+      query = URI.encode_query(%{"session" => ExLingr.Config.get})
+      json = ExLingr.API.Base.decode(@session_destroy, query)
+      ExLingr.Config.set(nil)
+      json
+    else
+      nil
+    end
   end
 end

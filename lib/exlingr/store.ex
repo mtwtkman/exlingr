@@ -3,7 +3,7 @@ defmodule ExLingr.Store do
   Stores the configuration info.
   """
 
-  # @ets_table has `username`, `password`, `session`.
+  # ets_table has `session`
   @ets_table :exlingr_settings
 
   @doc """

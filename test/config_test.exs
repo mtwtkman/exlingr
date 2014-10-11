@@ -9,11 +9,7 @@ defmodule ExLingr.ConfigTest do
     ExLingr.Config.set(@account_info)
   end
 
-  test "table has account_info"do
-    assert ExLingr.Config.get == @account_info
-  end
-
-  test "return expected tuples"do
-    assert ExLingr.Config.get_tuples == [username: to_char_list(@username), password: to_char_list(@password)]
+  test "table has session" do
+    assert ExLingr.Config.get != nil
   end
 end

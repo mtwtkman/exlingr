@@ -19,13 +19,19 @@ defmodule ExLingr.Config do
   Get login configuration values.
   """
   def get do
-    ExLingr.Store.get(@session)
+    if inspect do
+      ExLingr.Store.get(@session)
+    else
+      nil
+    end
   end
 
-  @doc """
-  Get login configuration values in tuple format.
-  """
-  def get_tuples do
-    ExLingr.Config.get |> Enum.map(fn ({k, v}) -> {k, to_char_list(v)} end)
+  defp inspect do
+    case ExLingr.Store.get(@session) do
+      [] ->
+        false
+      _ ->
+        true
+    end
   end
 end

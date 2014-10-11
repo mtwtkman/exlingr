@@ -1,3 +1,3 @@
-defmodule ExLingr.Error do
-  defexception [:message]
+defmodule SessionExistError do
+  defexception message: "session is not exist."
 end
