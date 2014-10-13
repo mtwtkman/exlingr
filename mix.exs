@@ -4,15 +4,15 @@ defmodule ExLingr.Mixfile do
   def project do
     [app: :exlingr,
      version: "0.0.1",
-     elixir: "~> 1.0.0-rc2",
+     elixir: ">= 1.0.0",
+     description: description,
+     package: package,
      deps: deps]
   end
 
   # Configuration for the OTP application
-  #
-  # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger]]
+      [applications: [:logger]]
   end
 
   # Dependencies can be Hex packages:
@@ -29,5 +29,17 @@ defmodule ExLingr.Mixfile do
       {:httpoison, github: "edgurgel/httpoison"},
       {:jsex, github: "talentdeficit/jsex"},
     ]
+  end
+
+  defp description do
+    """
+    Lingr client library for elixir.
+    """
+  end
+
+  defp package do
+    [ contributors: ["boku"],
+      licenses: ["WTFPL"],
+      links: [{"GitHub", "https://github.com/mtwtkman/exlingr"}]]
   end
 end

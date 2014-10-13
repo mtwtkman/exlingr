@@ -9,7 +9,7 @@ defmodule ExLingr.SessionTest do
     json = ExLingr.create_session @username, @password
     assert json["session"] == ExLingr.Config.get
     assert json["session"] == (ExLingr.verify_session)["session"]
-    assert (ExLingr.destroy_session)["status"] == "ok"
+    ExLingr.destroy_session
     assert ExLingr.destroy_session == nil
   end
 end
