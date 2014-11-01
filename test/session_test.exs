@@ -5,7 +5,6 @@ defmodule ExLingr.SessionTest do
   @password System.get_env("LINGR_PASSWORD")
 
   test "session interfaces run correctly" do
-    ExLingr.start
     json = ExLingr.create_session @username, @password
     assert json["session"] == ExLingr.Config.get
     assert json["session"] == (ExLingr.verify_session)["session"]
