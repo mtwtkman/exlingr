@@ -7,7 +7,7 @@ defmodule ExLingr.API.Base do
   @endpoint "http://lingr.com/api/"
   @observe  "http://lingr.com:8080/api/"
 
-  def init do
+  def start do
     HTTPoison.start
   end
 

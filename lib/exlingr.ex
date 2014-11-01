@@ -1,13 +1,14 @@
 defmodule ExLingr do
+  use Application
   @moduledoc """
   Provides user interface for Lingr API
   Super benri -> https://gist.github.com/kumar8600/df2688b7bbc4f8fd28ba
   """
 
-  def start do
+  def start(_type, _args) do
     ExLingr.Config.start
+    ExLingr.API.Base.start
     ExLingr.Supervisor.start_link
-    ExLingr.API.Base.init
   end
 
   # --------- Sessions ---------

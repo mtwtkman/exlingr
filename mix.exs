@@ -4,7 +4,7 @@ defmodule ExLingr.Mixfile do
   def project do
     [app: :exlingr,
      version: "0.0.1",
-     elixir: ">= 1.0.0",
+     elixir: "~> 1.1.0-dev",
      description: description,
      package: package,
      deps: deps]
@@ -12,7 +12,8 @@ defmodule ExLingr.Mixfile do
 
   # Configuration for the OTP application
   def application do
-      [applications: [:logger]]
+    [application: [],
+     mod: {ExLingr, []}]
   end
 
   # Dependencies can be Hex packages:
