@@ -1,5 +1,6 @@
-%{"hackney": {:hex, :hackney, "0.14.1"},
+%{"exjsx": {:git, "git://github.com/talentdeficit/exjsx.git", "e89012e5062568df789cd9eb45db4f928a93b56b", []},
+  "hackney": {:hex, :hackney, "0.14.1"},
   "httpoison": {:git, "git://github.com/edgurgel/httpoison.git", "0be49fc9d10946fbaf5c821db6160d45e6f88623", []},
   "idna": {:hex, :idna, "1.0.1"},
   "jsex": {:git, "git://github.com/talentdeficit/jsex.git", "4f9d46b77567a48282a3477f87ab72faf6bd1721", []},
-  "jsx": {:hex, :jsx, "2.1.1"}}
+  "jsx": {:hex, :jsx, "2.3.0"}}

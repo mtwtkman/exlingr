@@ -4,7 +4,7 @@ defmodule ExLingr.Mixfile do
   def project do
     [app: :exlingr,
      version: "0.0.1",
-     elixir: "~> 1.1.0-dev",
+     elixir: "~> 1.0",
      description: description,
      package: package,
      deps: deps]
@@ -28,7 +28,7 @@ defmodule ExLingr.Mixfile do
   defp deps do
     [
       {:httpoison, github: "edgurgel/httpoison"},
-      {:jsex, github: "talentdeficit/jsex"},
+      {:exjsx, github: "talentdeficit/exjsx"},
     ]
   end
 
@@ -39,7 +39,7 @@ defmodule ExLingr.Mixfile do
   end
 
   defp package do
-    [ contributors: ["boku"],
+    [ contributors: ["mtwtkman"],
       licenses: ["WTFPL"],
       links: [{"GitHub", "https://github.com/mtwtkman/exlingr"}]]
   end

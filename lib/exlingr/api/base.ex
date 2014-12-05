@@ -22,6 +22,6 @@ defmodule ExLingr.API.Base do
   Json decode wrapper.
   """
   def decode(path, query) do
-    request(path, query).body |> JSEX.decode!
+    request(path, query).body |> JSX.decode!
   end
 end

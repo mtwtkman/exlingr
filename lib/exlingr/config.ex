@@ -19,14 +19,14 @@ defmodule ExLingr.Config do
   Get login configuration values.
   """
   def get do
-    if inspect do
+    if inspect_session do
       ExLingr.Store.get(@session)
     else
       nil
     end
   end
 
-  defp inspect do
+  defp inspect_session do
     case ExLingr.Store.get(@session) do
       [] ->
         false
