@@ -41,6 +41,6 @@ defmodule ExLingr.Mixfile do
   defp package do
     [ contributors: ["mtwtkman"],
       licenses: ["WTFPL"],
-      links: [{"GitHub", "https://github.com/mtwtkman/exlingr"}]]
+      links: [%{"GitHub" => "https://github.com/mtwtkman/exlingr"}]]
   end
 end
