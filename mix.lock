@@ -1,6 +1,10 @@
-%{"exjsx": {:git, "git://github.com/talentdeficit/exjsx.git", "e89012e5062568df789cd9eb45db4f928a93b56b", []},
+%{"earmark": {:hex, :earmark, "0.1.12"},
+  "ex_doc": {:hex, :ex_doc, "0.6.1"},
+  "exjsx": {:git, "git://github.com/talentdeficit/exjsx.git", "e89012e5062568df789cd9eb45db4f928a93b56b", []},
   "hackney": {:hex, :hackney, "0.14.1"},
+  "hoedown": {:git, "git://github.com/hoedown/hoedown.git", "a8fdc099bdd33a7238c26278a3283f5662284400", []},
   "httpoison": {:git, "git://github.com/edgurgel/httpoison.git", "0be49fc9d10946fbaf5c821db6160d45e6f88623", []},
   "idna": {:hex, :idna, "1.0.1"},
   "jsex": {:git, "git://github.com/talentdeficit/jsex.git", "4f9d46b77567a48282a3477f87ab72faf6bd1721", []},
-  "jsx": {:hex, :jsx, "2.3.0"}}
+  "jsx": {:hex, :jsx, "2.3.0"},
+  "markdown": {:git, "git://github.com/devinus/markdown.git", "a428908a6dd88f351775d1d3da530a1a2aa0d6cb", []}}

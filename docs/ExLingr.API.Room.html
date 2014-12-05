@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ExLingr.API.Room</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="content">
+      <div class="breadcrumbs">exlingr v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="ExLingr.html">ExLingr</a> &rarr; API &rarr; <a href="ExLingr.API.Room.html">Room</a></div>
+
+      <h1>
+        ExLingr.API.Room
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+      </ul>
+
+      
+        <div id="moduledoc" class="docstring">
+          <p>Provides room API interfaces.</p>
+
+        </div>
+      
+
+      
+
+      
+        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#get_archives/3">get_archives(room, before, limit)</a></td>
+  
+    <td class="summary_synopsis"><p>Get archives from specified room.
+Access to <code>room/get_archives</code> with session, room, before, limit.
+* before means &quot;max message ID&quot;</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#say/3">say(room, nickname, text)</a></td>
+  
+    <td class="summary_synopsis"><p>Post to specified room.
+Access to <code>room/say</code> with session, room, nickname, text</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#show_room/1">show_room(room)</a></td>
+  
+    <td class="summary_synopsis"><p>Show room list.
+Access to <code>room/show</code> with session, room</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#subscribe/2">subscribe(room, reset \\ true)</a></td>
+  
+    <td class="summary_synopsis"><p>Subscribe on.
+Access to <code>room/subscribe</code> with session, room, reset</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#unsubscribe/1">unsubscribe(room)</a></td>
+  
+    <td class="summary_synopsis"><p>Subscribe off.
+Access to <code>room/unsubscribe</code> with session, room</p>
+</td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <div id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <div class="detail">
+  <div class="detail_header" id="get_archives/3">
+    <span class="signature"><strong>get_archives(room, before, limit)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#get_archives/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Get archives from specified room.
+Access to <code>room/get_archives</code> with session, room, before, limit.
+* before means &quot;max message ID&quot;</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="say/3">
+    <span class="signature"><strong>say(room, nickname, text)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#say/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Post to specified room.
+Access to <code>room/say</code> with session, room, nickname, text.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="show_room/1">
+    <span class="signature"><strong>show_room(room)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#show_room/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Show room list.
+Access to <code>room/show</code> with session, room.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="subscribe/2">
+    <span class="signature"><strong>subscribe(room, reset \\ true)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#subscribe/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Subscribe on.
+Access to <code>room/subscribe</code> with session, room, reset.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="unsubscribe/1">
+    <span class="signature"><strong>unsubscribe(room)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#unsubscribe/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Subscribe off.
+Access to <code>room/unsubscribe</code> with session, room.</p>
+</div>
+  
+</div>
+
+        </div>
+      
+
+      
+
+      
+    </div>
+  </body>
+</html>

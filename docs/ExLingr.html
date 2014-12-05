@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ExLingr</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="content">
+      <div class="breadcrumbs">exlingr v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="ExLingr.html">ExLingr</a></div>
+
+      <h1>
+        ExLingr
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+      </ul>
+
+      
+        <div id="moduledoc" class="docstring">
+          <p>Provides user interface for Lingr API
+Super benri -&gt; <a href="https://gist.github.com/kumar8600/df2688b7bbc4f8fd28ba">https://gist.github.com/kumar8600/df2688b7bbc4f8fd28ba</a></p>
+
+        </div>
+      
+
+      
+
+      
+        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#create_session/2">create_session(username, password)</a></td>
+  
+    <td class="summary_synopsis"><p>Provides session API interfaces</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#destroy_session/0">destroy_session()</a></td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#get_archives/3">get_archives(room, before, limit)</a></td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#get_room/0">get_room()</a></td>
+  
+    <td class="summary_synopsis"><p>Provides user API interface</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#say/3">say(room, nickname, text)</a></td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#show_room/1">show_room(room)</a></td>
+  
+    <td class="summary_synopsis"><p>Provides room API interfaces</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#start/2">start(type, args)</a></td>
+  
+    <td class="summary_synopsis"><p>Callback implementation of <a href="http://www.erlang.org/doc/man/application.html#start-2"><code>:application.start/2</code></a></p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#subscribe/2">subscribe(room, reset)</a></td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#unsubscribe/1">unsubscribe(room)</a></td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#verify_session/0">verify_session()</a></td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <div id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <div class="detail">
+  <div class="detail_header" id="create_session/2">
+    <span class="signature"><strong>create_session(username, password)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#create_session/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Provides session API interfaces.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="destroy_session/0">
+    <span class="signature"><strong>destroy_session()</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#destroy_session/0" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"></div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="get_archives/3">
+    <span class="signature"><strong>get_archives(room, before, limit)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#get_archives/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"></div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="get_room/0">
+    <span class="signature"><strong>get_room()</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#get_room/0" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Provides user API interface.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="say/3">
+    <span class="signature"><strong>say(room, nickname, text)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#say/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"></div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="show_room/1">
+    <span class="signature"><strong>show_room(room)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#show_room/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Provides room API interfaces.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="start/2">
+    <span class="signature"><strong>start(type, args)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#start/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Callback implementation of <a href="http://www.erlang.org/doc/man/application.html#start-2"><code>:application.start/2</code></a>.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="subscribe/2">
+    <span class="signature"><strong>subscribe(room, reset)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#subscribe/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"></div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="unsubscribe/1">
+    <span class="signature"><strong>unsubscribe(room)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#unsubscribe/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"></div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="verify_session/0">
+    <span class="signature"><strong>verify_session()</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#verify_session/0" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"></div>
+  
+</div>
+
+        </div>
+      
+
+      
+
+      
+    </div>
+  </body>
+</html>

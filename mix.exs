@@ -29,6 +29,9 @@ defmodule ExLingr.Mixfile do
     [
       {:httpoison, github: "edgurgel/httpoison"},
       {:exjsx, github: "talentdeficit/exjsx"},
+      {:ex_doc, "~> 0.6", only: :dev},
+      {:earmark, ">= 0.0.0"},
+      {:markdown, github: "devinus/markdown"}
     ]
   end
 
@@ -39,8 +42,10 @@ defmodule ExLingr.Mixfile do
   end
 
   defp package do
-    [ contributors: ["mtwtkman"],
+    [
+      contributors: ["mtwtkman"],
       licenses: ["WTFPL"],
-      links: [%{"GitHub" => "https://github.com/mtwtkman/exlingr"}]]
+      links: %{"GitHub" => "https://github.com/mtwtkman/exlingr"}
+    ]
   end
 end
